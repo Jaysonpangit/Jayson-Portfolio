@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Jayson Medrano | Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light text-white bg-[blue]">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <a class="navbar-brand" href="#"><img src="Logo.jpg" alt="JM Logo" class="logo" /></a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a onclick="scrollToSection('home')">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a onclick="scrollToSection('about')">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a onclick="scrollToSection('skills')">SKILL</a>
+            </li>
+            <li class="nav-item">
+              <a onclick="scrollToSection('contact')">CONTACT</a>
+            </li>
+          </ul>
+          <form class="d-flex search ml-4">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success btn-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section id="home">
+    <div class="container-fluid section-content">
+      <img src="Home.jpg" alt="Profile Photo" style=" width: 350px; border-radius: 5px;" />
+      <div>
+        <h1>Hello, My name is <br></h1>
+        <h1>Jayson Medrano and I <br></h1>
+        <h1>am a Developer.</h1>
+      </div>
+    </div>
+  </section>
+  <h2 id="about">ABOUT</h2>
+  <section>
+    <div class="section-content">
+      <img src="About.jpg" alt="Coding" style=" width: 300px;" />
+      <p>
+      <h1>I like watching series.<br>
+        I like playing games.<br>
+        I like playing basketball.<br>
+        I like listening to music.<br>
+        I like eating food.
+      </h1>
+      </p>
+    </div>
+  </section>
+  <h2 id="skills">SKILL</h2>
+  <section class="skills">
+    <div>
+      <img src="Time management.jpg" alt="Time Management" style="width: 195px;">
+      <h3>Time Management</h3>
+    </div>
+    <div>
+      <img src="Interpersonal Skills.jpg" alt="Interpersonal Skills" style="width: 200px;" />
+      <h3>Interpersonal Skills</h3>
+    </div>
+    <div>
+      <img src="Communication Skills.jpg" alt="Communication Skills" style="width: 200px;" />
+      <h3>Communication Skills</h3>
+    </div>
+  </section>
+  <h2 id="contact">CONTACT</h2>
+  <section class="contact-icons">
+    <a href="https://m.me/jayson.medrano.9406"><img src="Messenger.jpg" alt="Messenger" style="width: 70px;" /> </a>
+    <a href="09278333074"><img src="Phone.jpg" alt="Phone"></a>
+    <a href="https://maps.app.goo.gl/ZDuotZFNniperBSo9?g_st=afp" target="_blank">
+      <img src="Location.jpg" alt="Location" style="width: 70px;" />
+    </a>
+
+    </a>
+
+  </section>
+  <footer>
+    <a onclick="scrollToSection('home')">HOME</a>
+    <a onclick="scrollToSection('about')">ABOUT</a>
+    <a onclick="scrollToSection('skills')">SKILL</a>
+    <a onclick="scrollToSection('contact')">CONTACT</a>
+  </footer>
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+    document.getElementById('searchInput').addEventListener('input', function (e) {
+      alert(`Search functionality is not implemented. You typed: ${e.target.value}`);
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
